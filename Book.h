@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <memory>
+#include <iostream>
 
 class Book
 {
@@ -16,7 +17,7 @@ public:
 	Book(std::string title);
 	Book::Book();
 	~Book();
-//	std::string ListContents();
+	std::string ListContents();
 	std::string getBook() { return _title; };
 	void addBook(std::string newBook);
 	//std::string Search(std::string name);

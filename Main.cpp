@@ -30,7 +30,7 @@ int main()
 		switch (choice)
 		{
 		case 1: system("cls"); {//show fiction
-		//	Book().ListContents(); 
+			Book().ListContents(); 
 			Fiction().getShelf();
 			sort(Fiction().getShelf().begin(), Fiction().getShelf().end());
 			Fiction().showShelf();
@@ -69,13 +69,13 @@ int main()
 		}
 		
 
-		case 6: system("cls");
+		/*case 6: system("cls");  // the merge function here is breaking algorith for some reason.
 		{
 			
 			getline(cin, input);
 			cout << "enter the title of your book" << endl; 
 			vector<string> mergedShelf;
-			merge(Fiction().getShelf().begin(), Fiction().getShelf().end(), nonFiction().getShelf().begin(), nonFiction().getShelf().end(), mergedShelf);  //big thanks to intellisense
+			//merge(Fiction().getShelf().begin(), Fiction().getShelf().end(), nonFiction().getShelf().begin(), nonFiction().getShelf().end(), mergedShelf);  //big thanks to intellisense
 			//auto title = mergedShelf;
 			//int i = mergedShelf.size();
 			std::vector<string>::iterator it;
@@ -85,7 +85,7 @@ int main()
 			else
 				cout << "Book not found" << endl; 
 				break; 
-		}
+		}*/
 			
 		default:choice = -1; break; 
 		

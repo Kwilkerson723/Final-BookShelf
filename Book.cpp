@@ -1,16 +1,20 @@
 #include "Book.h"
 
-
+using namespace std; 
 
 Book::Book()
 {
 }
 
-//std::string Book::ListContents()
-//{
-//	_book
-//	return output;
-//}
+std::string Book::ListContents() 
+{
+	for (vector<string>::const_iterator i = _book.begin(); i != _book.end();i++)
+	{
+		//cout << *i << endl; 
+		return *i;
+	}
+
+}
 
 Book::Book(std::string title) : _title(title)
 {
